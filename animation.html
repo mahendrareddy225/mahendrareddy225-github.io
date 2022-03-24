@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+	
+			div.relative {
+						position: relative;
+						width: 75%;
+						height: 600px;
+						border: 3px solid #73AD21;
+						background-image:url("bike3.jpeg");
+						
+			} 
+
+			div.absolute {
+						position: absolute;
+						top: 80px;
+						left: 0;
+						width: 200px;
+						height: 100px;
+						border: 3px solid #73AD21;
+						animation-name: example;
+						animation-duration: 5s;
+						animation-timing-function: linear;
+						animation-delay: 2s;
+						animation-iteration-count: infinite;
+						animation-direction: alternate;
+			}
+			@keyframes example {
+							0%   {
+									background-color:red; left:0px; top:0px;
+							}
+							25%  {
+									background-color:yellow; left:200px; top:0px;
+							}
+							50%  {
+									background-color:blue; left:200px; top:200px;
+							}
+							75%  {
+									background-color:green; left:0px; top:200px;
+							}
+							100% {
+									background-color:red; left:0px; top:0px;
+							}
+			}
+			div.absolute1 {
+						position: absolute;
+						top: 80px;
+						right: 0;
+						width: 200px;
+						height: 100px;
+						border: 3px solid #73AD21;
+						animation-name: mega;
+						animation-duration: 5s;
+						animation-timing-function: linear;
+						animation-delay: 2s;
+						animation-iteration-count: infinite;
+						animation-direction: alternate;
+			}
+			@keyframes mega {
+							0%   {
+									background-color:red; right:0px; top:0px;
+							}
+							25%  {
+									background-color:yellow; right:200px; top:0px;
+							}
+							50%  {
+									background-color:blue; right:200px; top:200px;
+							}
+							75%  {
+									background-color:green; right:0px; top:200px;
+							}
+							100% {
+									background-color:red; right:0px; top:0px;
+							}
+			}
+			div.absolute2 {
+						position: absolute;
+						bottom: 80px;
+						left: 0;
+						width: 200px;
+						height: 100px;
+						border: 3px solid #73AD21;
+						animation-name: power;
+						animation-duration: 5s;
+						animation-timing-function: linear;
+						animation-delay: 2s;
+						animation-iteration-count: infinite;
+						animation-direction: alternate;
+			}
+			@keyframes power {
+							0%   {
+									background-color:red; left:0px; bottom:0px;
+							}
+							25%  {
+									background-color:yellow; left:200px;bottom:0px;
+							}
+							50%  {
+									background-color:blue;left:200px; bottom:200px;
+							}
+							75%  {
+									background-color:green; left:0px; bottom:200px;
+							}
+							100% {
+									background-color:red; left:0px; bottom:0px;
+							}
+			}
+			div.absolute3 {
+						position: absolute;
+						bottom: 80px;
+						right: 0;
+						width: 200px;
+						height: 100px;
+						border: 3px solid #73AD21;
+						animation-name: star;
+						animation-duration: 5s;
+						animation-timing-function: linear;
+						animation-delay: 2s;
+						animation-iteration-count: infinite;
+						animation-direction: alternate;
+			}
+			@keyframes star {
+							0%   {
+									background-color:red; right:0px; bottom:0px;
+							}
+							25%  {
+									background-color:yellow; right:200px; bottom:0px;
+							}
+							50%  {
+									background-color:blue; right:200px; bottom:200px;
+							}
+							75%  {
+									background-color:green; right:0px; bottom:200px;
+							}
+							100% {
+									background-color:red; right:0px; bottom:0px;
+							}
+			}
+</style>
+</head>
+<body>
+
+<div class="relative">
+  <div class="absolute"><img width="200px" height="100px" src="bike.jpeg"></div>
+  <div class="absolute1"><img width="200px" height="100px" src="bike2.jpeg"></div>
+  <div class="absolute2"><img width="200px" height="100px" src="buke1.jpeg"></div>
+  <div class="absolute3"><img width="200px" height="100px" src="bike4.jpeg"></div>
+</div>
+
+</body>
+</html>
